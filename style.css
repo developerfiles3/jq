@@ -1,0 +1,44 @@
+
+
+img .ui-li-thumb{
+	height: 100%;
+	width: 100%;
+	margin-bottom:0px;
+	margin-right: 199px;
+
+}
+
+a img{ height: 100%;}
+
+.ui-li-desc{
+	height: 35px;
+	
+}
+
+.horario{
+	overflow: show;
+	text-overflow: clip;
+	white-space: normal;
+	height: 35px;
+}
+
+.horarioMod{
+	overflow: show;
+	text-overflow: clip;
+	white-space: normal;
+	height: 35px;
+}
+
+li a{
+	text-decoration: none;
+
+}
+
+.tdimage{ margin-right: 5px;}
+
+.tdhorario{margin-right: 5px;
+			font-size: 12px}
+
+.tdedad{font-size: 12px;}
+
+.sinopsis{ font-size: 11px;}

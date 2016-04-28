@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<title>Mi App del Cine</title>
+</head>
+<body>
+
+	<!-- pagina cartelera principal -->
+	<div data-role="page" id="cartelera">
+
+		<div data-role="header" data-position="fixed"> 
+			<h1>Cartelera</h1>
+		</div>
+
+		<div data-role="content">
+			<div >
+				<ul data-role="listview" data-inset="true" >
+						<li>
+							<a href="#peli1" data-transition="slide"><img src="peli1.png" ><h3>Mar Adentro</h3><p class="horario">16:25, 18:45</p><p><b>Mayores de 12 años</b></p>
+							</a>
+						</li>
+											<li>
+							<a href="#peli2" data-transition="slide">
+								<img src="peli2.png">
+								<h3>Celda 211</h3>
+								<p class="horario">22:00, 01:00</p>
+								<p><b>Mayores de 14 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli3" data-transition="slide">
+								<img src="peli3.png">
+								<h3>Camino</h3>
+								<p class="horario">16:10; 18:20; 20:30; 22:40; 00:55</p>
+								<p><b>Mayores de 13 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli4" data-transition="slide">
+								<img src="peli4.png">
+								<h3>Fuego</h3>
+								<p class="horario">17:25</p>
+								<p><b>Mayores de 11 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli5" data-transition="slide">
+								<img src="peli5.png">
+								<h3>El cuerpo</h3>
+								<p class="horario"> 19:25; 22:20; 00:30</p>
+								<p><b>Mayores de 10 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli6" data-transition="slide">
+								<img src="peli6.png">
+								<h3>Lo imposible</h3>
+								<p class="horario">16:10; 18:25</p>
+								<p><b>Mayores de 14 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli7" data-transition="slide">
+								<img src="peli7.png">
+								<h3>El orfanato</h3>
+								<p class="horario">20:40; 22:45; 00:55</p>
+								<p><b>Mayores de 10 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli8" data-transition="slide">
+								<img src="peli8.png">
+								<h3>La Gran Familia Española</h3>
+								<p class="horario">00:50</p>
+								<p><b>Mayores de 10 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli9" data-transition="slide">
+								<img src="peli9.png">
+								<h3>Perdona si te llamo amor</h3>
+								<p class="horario">21:30</p>
+								<p><b>Mayores de 16 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli10" data-transition="slide">
+								<img src="peli10.png">
+								<h3>Carmina y Amén</h3>
+								<p class="horario"> 17:10; 19:30</p>
+								<p><b>Mayores de 12 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli11" data-transition="slide">
+								<img src="peli11.png">
+								<h3>La voz dormida</h3>
+								<p class="horario">16:15; 19:00; 21:45</p>
+								<p><b>Mayores de 13 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli12" data-transition="slide">
+								<img src="peli12.png">
+								<h3>Palmeras en la nieve</h3>
+								<p class="horario">16:00; 18:15; 20:30; 22:45</p>
+								<p><b>Mayores de 12 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli13" data-transition="slide">
+								<img src="peli13.png">
+								<h3>Volver</h3>
+								<p class="horario">17:00; 19:20; 21:40; 00:00</p>
+								<p><b>Mayores de 16 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli14" data-transition="slide">
+								<img src="peli14.png">
+								<h3>La novia</h3>
+								<p class="horario"> 15:55; 18:15; 20:30; 22:45; 01:00</p>
+								<p><b>Mayores de 15 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli15" data-transition="slide">
+								<img src="peli15.png">
+								<h3>No habrá paz para los malvados</h3>
+								<p class="horario">18:00; 20:15; 22:30</p>
+								<p><b>Mayores de 16 años</b></p>
+							</a>
+						</li>
+						<li>
+							<a href="#peli16" data-transition="slide">
+								<img src="peli16.png">
+								<h3>Que se mueran los feos</h3>
+								<p class="horario">15:55</p>
+								<p><b>Mayores de 11 años</b></p>
+							</a>
+						</li>
+						
+				</ul>
+
+			</div>
+
+
+</div>
+
+
+		<div data-role="footer" data-position="fixed">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+
+				</ul>
+				
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+	
+
+
+
+
+	<!-- pagina detallada pelicula1  -->
+		<div data-role="page" id="peli1" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Mar Adentro</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli1.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Mar Adentro</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">16:25, 18:45
+					<p class="tdedad"><b>Mayores de 12 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Ramón (Javier Bardem) lleva casi treinta años postrado en una cama al cuidado de su familia. Su única ventana al mundo es la de su habitación, que da al mar, donde sufrió el accidente que interrumpió su juventud. Desde entonces, su único deseo es morir dignamente. En su vida ejercen una gran influencia dos mujeres: Julia (Belén Rueda), una abogada que apoya su causa, y Rosa (Lola Dueñas), una vecina que intenta convencerlo de que vivir merece la pena. Pero también ellas, cautivadas por la luminosa personalidad de Ramón, se replantearán los principios que rigen sus vidas. Él sabe que sólo quien de verdad le ame le ayudará a emprender el último viaje</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=1pknE7rBs1I" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<!-- pagina detallada pelicula2  -->
+		<div data-role="page" id="peli2" data-transition="slide" data-add-back-button="true">
+				
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Celda 211</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli2.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Celda 211</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">22:00, 01:00
+					<p class="tdedad"><b>Mayores de 14 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>El día en que Juan (Alberto Ammann) empieza a trabajar en su nuevo destino como funcionario de prisiones, se ve atrapado en un motín carcelario. Decide entonces hacerse pasar por un preso más para salvar su vida y para poner fin a la revuelta, encabezada por el temible Malamadre (Luis Tosar). Lo que ignora es que el destino le ha preparado una encerrona.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=LJTWVuptK7Q" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+			<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+<!-- pagina detallada pelicula3  -->
+		<div data-role="page" id="peli3" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Camino</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli3.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Camino</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">16:10, 18:20, 20:30
+					<p class="tdedad"><b>Mayores de 13 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Una aventura emocional en torno a una deslumbrante niña de once años, muy religiosa, que se enfrenta al mismo tiempo a dos acontecimientos que son completamente nuevos para ella: enamorarse y morir. 'Camino' es, sobre todo, una luz brillante capaz de atravesar todas y cada una de las tenebrosas puertas que se van cerrando ante ella, y que pretenden en vano sumir en la oscuridad su deseo de vivir, amar y sentirse definitivamente feliz. Inspirada en la verdadera historia de Alexia González Barros, la hija menor de una familia perteneciente al Opus Dei, que falleció en 1985 a los 14 años de edad, y que actualmente está en proceso de canonización</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=RQhLZAZpQVw" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+<!-- pagina detallada pelicula4  -->
+		<div data-role="page" id="peli4" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Fuego</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli4.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Fuego</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">17:25
+					<p class="tdedad"><b>Mayores de 11 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Carlos es policía. Un día, una bomba colocada en su coche mata a su mujer y deja sin piernas a su hija de 10 años. Él resulta ileso. Once años más tarde vive en otra ciudad, Barcelona, y parece una persona distinta; trabaja en una importante empresa de seguridad. Su hija parece haber superado aquel duro trauma, aunque las secuelas físicas sean imborrables. Carlos, en cambio, a pesar de los años de severo tratamiento psicológico, no lo ha superado. En su alma solo hay cabida para un sentimiento, el odio, y un único objetivo: la venganza.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=96c0jnnRUk8" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula5  -->
+		<div data-role="page" id="peli5" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>El cuerpo</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli5.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>El cuerpo</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">19:25, 22:20, 00:30
+					<p class="tdedad"><b>Mayores de 10 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Un guardia de seguridad de la morgue huye y es atropellado. En el depósito de cadáveres, la policía descubre que la puerta de una de las neveras está abierta y el cadáver de una mujer ha desaparecido. El inspector de policía encargado de la investigación cuenta con la colaboración del marido de la difunta, aunque no descarta la posibilidad de que esté relacionado con el asunto... Debut en la dirección del guionista Oriol Paulo (Los ojos de Julia)</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=wF3-Hczx8-0" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+<!-- pagina detallada pelicula6  -->
+		<div data-role="page" id="peli6" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1 Lo imposible</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli6.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Lo imposible</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">16:10, 18:25
+					<p class="tdedad"><b>Mayores de 14 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Diciembre del año 2004. María (Naomi Watts), Henry (Ewan McGregor) y sus tres hijos pequeños vuelan desde Japón a Tailandia para pasar las vacaciones de Navidad en la playa. Una mañana, mientras se encuentran todos en la piscina del complejo a orillas del mar, un tremendo tsunami destroza el hotel y gran parte de la costa del sudeste asiático. Este desastre cambio para siempre la vida de millones de personas. Esta es sólo la historia de una familia.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=0E_oPirzJKM" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+<!-- pagina detallada pelicula7  -->
+		<div data-role="page" id="peli7" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>El orfanato</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli7.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>El orfanato</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">20:40, 22:45, 00:55
+					<p class="tdedad"><b>Mayores de 10 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Laura se instala con su familia en el orfanato en el que creció de niña. Su propósito es abrir una residencia para niños discapacitados. El ambiente del viejo caserón despierta la imaginación de su hijo, que empieza a dejarse arrastrar por la fantasía. Los juegos del niño inquietan cada vez más a Laura, que empieza a sospechar que en la casa hay algo que amenaza su familia</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=9qjHkkffOx8" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula8  -->
+		<div data-role="page" id="peli8" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>La Gran Familia Española</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli8.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>La Gran Familia Española</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">00:50
+					<p class="tdedad"><b>Mayores de 10 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Durante la final del mundial de fútbol de Sudáfrica se celebra una boda. Ese día, mientras España entera se paraliza, una familia con cinco hijos de nombres bíblicos (Adán, Benjamín, Caleb, Daniel y Efraín) se enfrenta también al partido más importante de su vida.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=VIioUAXM_yg" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula9  -->
+		<div data-role="page" id="peli9" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Perdona si te llamo amor</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli9.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Perdona si te llamo amor</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">121:30
+					<p class="tdedad"><b>Mayores de 16 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Álex, de 37 años, es un ejecutivo publicitario de éxito, atractivo, inteligente y brillante. Ansía conseguir por fin la estabilidad emocional. Sin embargo, es rechazado por su novia cuando le propone matrimonio. Incapaz de asumir el golpe, parece que su idílica vida comienza a desmoronarse. Precisamente en ese momento irrumpe en su camino sin previo aviso y como un vendaval Niki, estudiante de 17 años que no sólo consigue seducir y enamorar a Álex, sino dar un giro total a su vida... Adaptación de la novela homónima de Federico Moccia, popular escritor italiano, que también fue llevada al cine en Italia</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=KyxQFrIdRAQ" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula10  -->
+		<div data-role="page" id="peli10" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Carmina y Amén</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli10.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Carmina y Amén</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">17:10, 19:30
+					<p class="tdedad"><b>Mayores de 12 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Tras la súbita muerte de su marido, Carmina convence a su hija María de no dar parte de la defunción hasta pasados dos días y así poder cobrar la paga extra que él tenía pendiente. Durante esos dos días esconden el cadáver y disimulan su duelo en la cotidianidad de un bloque de pisos de un barrio humilde de Sevilla</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=JdIL4FkmH_E" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+<!-- pagina detallada pelicula11 -->
+		<div data-role="page" id="peli11" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>La voz dormida</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli11.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>La voz dormida</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">16:15, 19:00, 21:45
+					<p class="tdedad"><b>Mayores de 13 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>En plena postguerra, Pepita (María León), una joven cordobesa, abandona su aldea y viaja a Madrid para estar cerca de su hermana Hortensia (Inma Cuesta) que está embarazada y en prisión. Una vez en la capital, se enamora de Paulino (Marc Clotet), un valenciano de familia burguesa que sigue luchando en las montañas de la sierra de Madrid.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=97A-q4tfLdo" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula12  -->
+		<div data-role="page" id="peli12" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Palmeras en la nieve</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli12.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Palmeras en la nieve</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">16:00, 18:15, 20:30, 22:45
+					<p class="tdedad"><b>Mayores de 12 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Es 1953, Kilian abandona la montaña oscense para emprender con su hermano un viaje a Fernando Poo, una antigua colonia española en Guinea Ecuatorial. Allí les espera su padre, en la finca Sampaka, donde cultiva uno de los mejores cacaos del mundo. En la colonia descubrirán que la vida social es más placentera que en la encorsetada y gris España, vivirán los contrastes entre colonos y nativos y conocerán el significado de la amistad, la pasión, el amor y el odio.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=0IQbtBgP7_A" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula13  -->
+		<div data-role="page" id="peli13" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Volver</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli13.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Volver</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">17:00, 19:20, 21:40, 00:00
+					<p class="tdedad"><b>Mayores de 16 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Raimunda (Penélope Cruz) es manchega, pero vive en Madrid. Está casada con un obrero en paro (Antonio de la Torre) y tiene una hija adolescente (Yohana Cobo). Su hermana Sole (Lola Dueñas) se gana la vida como peluquera. Ambas echan de menos a su madre (Carmen Maura), que murió en un incendio. Pero, inesperadamente, la madre se presenta en casa de su hermana (Lampreave); después va a ver a Sole, a Raimunda y a Agustina (Portillo), una vecina del pueblo</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=hp4u67AV8VI" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula14  -->
+		<div data-role="page" id="peli14" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>La novia</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli14.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>La novia</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">15:55, 18:15, 20:30, 22:45, 01:00
+					<p class="tdedad"><b>Mayores de 15 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Adaptación de "Bodas de sangre", de Lorca. Desde pequeños, Leonardo, el novio y la novia han formado un triángulo inseparable, pero cuando se acerca la fecha de la boda las cosas se complican porque entre ella y Leonardo siempre ha habido algo más que amistad. La creciente tensión entre ambos es como un hilo invisible que no se puede explicar, pero tampoco romper.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=r_66wy-KA_g" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula15  -->
+		<div data-role="page" id="peli15" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>No habrá paz para los malvados</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli15.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>No habrá paz para los malvados</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">18:00, 20:15, 22:30
+					<p class="tdedad"><b>Mayores de 16 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Madrid, principios del siglo XXI. Un día, el inspector de policía Santos Trinidad, volviendo a casa muy borracho, se ve involucrado en un triple asesinato. Pero hay un testigo que consigue escapar y que podría incriminarlo. Santos emprende una investigación destinada a localizar y a eliminar al testigo. Mientras tanto, la juez Chacón, encargada de la investigación del triple crimen, avanza meticulosamente en la búsqueda del asesino hasta que comienza a sospechar que, lo que parecía un simple caso de ajuste de cuentas entre narcotraficantes colombianos es, aparentemente, algo mucho más importante y peligroso. </p>
+	
+
+		<a href="https://www.youtube.com/watch?v=T3tj98HeBi4" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+<!-- pagina detallada pelicula16  -->
+		<div data-role="page" id="peli16" data-transition="slide" data-add-back-button="true">
+
+		<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text=" Cartelera"> 
+			<h1>Que se mueran los feos</h1>
+		</div>
+
+		<div data-role="content">
+			
+			<table>
+				
+				<tr>
+						<td rowspan="3"><img src="peli16.png" class="tdimage"></td>
+				</tr>
+				
+				<tr>
+					<td><h3>Que se mueran los feos</h3></td>
+
+
+
+				</tr>
+					<td class="tdhoraio">15:55
+					<p class="tdedad"><b>Mayores de 11 años</td></b>
+				</td>
+
+		
+			
+		<tr>
+			<tr><td colspan="2"><p class="sinopsis">
+				<h4>SINOPSIS</h4>
+		<p>Eliseo es feo, cojo, está soltero y nunca ha conocido el amor. Nati es fea, le falta un pecho y está separada, pero tampoco conoce el verdadero amor. Él piensa que lo peor de su vida está aún por llegar. Ella piensa exactamente todo lo contrario. Al morir la madre de Eliseo, los dos vuelven a encontrarse después de veinte años. Quizá sea la última oportunidad que se les presenta de enamorarse y ser felices.</p>
+	
+
+		<a href="https://www.youtube.com/watch?v=keUAtpAKhOQ" data-role="button" rel="external">Ver trailer</a>
+		</td></tr>
+</table>
+	
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#cartelera" data-icon="home">Cartelera</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>	
+					
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+<!-- pagina INFO  -->
+		<div data-role="page" id="info" data-transition="slide" >
+
+		<div data-role="header" data-position="fixed" > 
+			<h1>Información</h1>
+		</div>
+
+		<div data-role="content">
+			<p><center><h2>Multicines 3D</h2></center></p>
+			<p><a href="http://www.cinesa.es" rel="external"></a></p>
+			<p>Precio de la entrada: 8€</p>
+			<p><h4>Mapa</h4></p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.426786119933!2d-5.80665208451078!3d43.38900827913124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368b9231e258b1%3A0x23f1f4340743a6dd!2sCinesa+Intu+Asturias!5e0!3m2!1ses!2ses!4v1461742289283" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="ui-grid-a">
+				
+				<a class="ui-block-a" href="https://www.facebook.com/cinesa.es" rel="external" data-role="button">Facebook</a>
+				<a class="ui-block-a" href="https://twitter.com/cinesa?lang=es" rel="external" data-role="button">Twitter</a>
+
+			</div>
+			
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+			
+			<h2>Multicines 3D</h2>
+
+		</div>
+
+
+	</div>
+</body>
+</html>
